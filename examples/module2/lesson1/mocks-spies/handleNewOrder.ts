@@ -14,7 +14,7 @@ export async function handleNewOrder(order: Order, processor: OrderProcessor) {
     throw new Error('Cannot process completed order');
   }
 
-  const status = await processor.processOrder(order);
+  const status = await processor.processOrder();
   if (status === 200) {
     order.status = 'completed';
   }

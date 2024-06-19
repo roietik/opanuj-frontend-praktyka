@@ -18,7 +18,7 @@ test('default controls are displayed', async () => {
   expect(screen.getByText('Zapisz')).toBeInTheDocument();
 });
 
-test('first name validation works', async () => {
+test('first name validator works', async () => {
   render(<Form />);
 
   await userEvent.click(screen.getByText('Zapisz'));

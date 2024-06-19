@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest';
 import { formValidator } from './validator';
 
-describe('Form validation', () => {
+describe('Form validator', () => {
     test('should return an error if first name is missing', () => {
         const errors = formValidator('', 'Doe', 30);
         expect(errors).toContain('First name is required');
