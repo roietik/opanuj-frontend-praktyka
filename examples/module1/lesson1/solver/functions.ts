@@ -9,5 +9,8 @@ export function multiply(firstFactor: number, secondFactor: number): number {
 }
 
 export function divide(dividend: number, divisor: number): number {
+  if (divisor === 0) {
+    throw new Error('Error: Cannot divide by zero!');
+  }
   return dividend / divisor;
 }
