@@ -14,7 +14,7 @@ describe('order handling', () => {
       status: 'pending',
     };
 
-    expect(async () => {
+    await expect(async () => {
       await handleNewOrder(order, asyncOrderProcessor);
     }).rejects.toThrowError();
   });
@@ -29,7 +29,7 @@ describe('order handling', () => {
     };
 
     const fakeOrderProcessor: OrderProcessor = {
-      processOrder: (order: Order) => Promise.resolve(200),
+      processOrder: () => Promise.resolve(200),
     };
     const spy = vi.spyOn(fakeOrderProcessor, 'processOrder');
 

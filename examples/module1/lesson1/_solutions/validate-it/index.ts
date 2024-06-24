@@ -5,7 +5,7 @@ import { validate } from './validation/validator';
 function main() {
   const input: HTMLInputElement = document.querySelector('input')!;
   const validateButton: HTMLElement =
-    document.querySelector('#validation-btn')!;
+    document.querySelector('#validator-btn')!;
   const clearInputButton: HTMLElement = document.querySelector('#cleanup-btn')!;
   const result: HTMLElement = document.querySelector('#result')!;
 

@@ -133,7 +133,7 @@ describe('(GPT-4) GuessPassword', () => {
     expect(passwordInput).toHaveValue('');
   });
 
-  it('trims the password input before validation', async () => {
+  it('trims the password input before validator', async () => {
     const passwordInput = screen.getByPlaceholderText(/wpisz hasło.../i);
     const submitButton = screen.getByRole('button', { name: /zgadnij/i });
 
