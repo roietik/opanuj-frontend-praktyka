@@ -2,9 +2,6 @@ import { Component } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { CountriesSearchService } from '../../services/countries-search.service';
 import { Country } from "../../types/Country";
-import {
-  CountrySearchTitleComponent
-} from "../../components/country/country-search-title/country-search-title.component";
 import {CountrySearchComponent} from "../../components/country/country-search/country-search.component";
 import {CountryListComponent} from "../../components/country/country-list/country-list.component";
 import {CountrySortingComponent} from "../../components/country/country-sorting/country-sorting.component";
@@ -12,7 +9,6 @@ import {CountrySortingComponent} from "../../components/country/country-sorting/
   selector: 'country-search-container',
   standalone: true,
   imports: [
-    CountrySearchTitleComponent,
     CountrySearchComponent,
     CountryListComponent,
     CountrySortingComponent
