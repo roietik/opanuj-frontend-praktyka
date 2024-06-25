@@ -4,7 +4,7 @@ import { CharacterCardComponent } from '../character-card/character-card.compone
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-character-list',
+  selector: 'app-country-list',
   standalone: true,
   imports: [CharacterCardComponent, CommonModule],
   templateUrl: './character-list.component.html',

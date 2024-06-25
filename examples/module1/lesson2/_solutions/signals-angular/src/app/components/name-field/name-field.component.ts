@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-name-field',
+  selector: 'app-country-search-field-value',
   standalone: true,
   imports: [],
   template: `<label class="flex flex-col">

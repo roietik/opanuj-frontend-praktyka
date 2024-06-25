@@ -1,0 +1,6 @@
+<div class="custom-select">
+  <select id="selectType" [(ngModel)]="selectedType" (ngModelChange)="changeType($event)">
+    <option *ngFor="let countryFieldType of countryFieldTypes | keyvalue" [value]="countryFieldType.value">
+      {{ countryFieldType.value }} </option>
+  </select>
+</div>

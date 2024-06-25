@@ -11,7 +11,7 @@ import { CharacterSearchService } from '../../services/character-search.service'
 import { Character } from '../../types/Character';
 
 @Component({
-  selector: 'app-character-search-container',
+  selector: 'app-country-search-container',
   standalone: true,
   imports: [
     SearchTitleComponent,

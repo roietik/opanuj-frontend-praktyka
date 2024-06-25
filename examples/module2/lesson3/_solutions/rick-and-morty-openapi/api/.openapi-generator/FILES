@@ -2,7 +2,7 @@
 apis/DefaultApi.ts
 apis/index.ts
 index.ts
-models/Character.ts
+models/Country.ts
 models/CharacterListResponse.ts
 models/CharacterListResponseInfo.ts
 models/CharacterLocation.ts

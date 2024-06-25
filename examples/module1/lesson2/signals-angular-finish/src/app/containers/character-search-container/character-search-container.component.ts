@@ -9,7 +9,7 @@ import { SortSelectComponent } from '../../components/sort-select/sort-select.co
 import { CharacterSearchService } from '../../services/character-search.service';
 
 @Component({
-  selector: 'app-character-search-container',
+  selector: 'app-country-search-container',
   standalone: true,
   imports: [
     SearchTitleComponent,

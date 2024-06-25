@@ -1,0 +1,7 @@
+<form class="pt-8">
+  <div class="space-x-4 flex items-end justify-center">
+    <country-search-field-value/>
+    <country-search-field-type/>
+  </div>
+  <pre *ngIf="errorMessage" class="error-message">{{ errorMessage }}</pre>
+</form>

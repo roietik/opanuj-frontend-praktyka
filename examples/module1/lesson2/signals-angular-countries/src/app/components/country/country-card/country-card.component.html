@@ -1,0 +1,30 @@
+<div class="country-card">
+  <h3 class="country-card__header">{{ country.flag }} {{ country.name.common }}</h3>
+  <p>Capital: {{ country.capital }}</p>
+  <ng-template-outlet [ngTemplateOutlet]="itemTemplate"
+                      [ngTemplateOutletContext]="{$implicit: {
+                        object: country.languages,
+                        singular: 'Language: ',
+                        plural: 'Languages: '
+                      }}">
+  </ng-template-outlet>
+
+  <ng-template-outlet [ngTemplateOutlet]="itemTemplate"
+                      [ngTemplateOutletContext]="{$implicit: {
+                        object: country.currencies,
+                        singular: 'Currency: ',
+                        plural: 'Currencies: ',
+                        useKey: true
+                      }}">
+  </ng-template-outlet>
+</div>
+
+<ng-template #itemTemplate let-data>
+  <p>
+    <span>{{ (data | label: {singular: data.singular, plural: data.plural}) }}</span>
+    <span *ngFor="let item of  data.object | keyvalue; let last = last">
+      {{ data.useKey ? item.key : item.value }}
+      <ng-container *ngIf="!last">,</ng-container>
+    </span>
+  </p>
+</ng-template>

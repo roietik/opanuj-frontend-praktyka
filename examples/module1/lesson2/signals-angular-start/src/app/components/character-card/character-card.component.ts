@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Character } from '../../types/Character';
 
 @Component({
-  selector: 'app-character-card',
+  selector: 'app-country-card',
   standalone: true,
   imports: [],
   template: `
